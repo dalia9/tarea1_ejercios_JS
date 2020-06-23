@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      
+       <meta charset="utf-8">
+       <title>Tarea 02 en JS</title>
+       <style>
+           #indice{
+               color: #1AA59A;
+               font-family: monospace;
+               font-size: 20px;                            /* agregue estilos */
+           }
+           
+           #button1{
+               color: #227066;
+               font-family: monospace;
+           }
+           
+           #texto{
+               
+           }
+           
+       </style>
+       <!-- agregar icono -->
+       <link rel="stylesheet" href="">
+       <a href="index.html" id="indice">INDICE</a>
+       <script>
+        function ChangeText(){                                      //el nombre de metod permite enlazarlo con el metodo del input
+         document.getElementById("button1").innerHTML="Dalia Venegas";   //con el id del h1 se cambiara lo hay en el inner por Dalia Venegas
+        }
+       </script>
+    </head>
+    <body>
+       <h1 id="button1">Tarea 02 con JavaScript</h1>                                   
+        <input  type="button" value="ClicMe!" onClick="ChangeText()" id="button1">
+    </body>
+</html>    

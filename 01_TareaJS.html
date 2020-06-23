@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+       <meta charset="utf-8">
+       <title>INTRO A JAVA-SCRIPT</title>
+       <style>
+           #indice{
+                color: #1AA59A;
+               font-family: monospace;
+               font-size: 20px;
+           }
+           
+           #texto{                            /* ingrese algo de estilo a cada una de la paginas */
+               color: #227066;
+               font-family: monospace;
+           }
+           
+           #indice{
+               color: #227066;
+               font-family: monospace;
+           }
+           
+       </style>
+       <a href="index.html" id="indice">INDICE</a>
+       <!-- agregar icono -->
+       <link rel="stylesheet" href="">
+       <script src="JavaScript.js"></script>
+    </head>
+    <body>
+       <h1 id="texto"> Tarea 01 con Javasript</h1>
+       <script>
+    
+         var cal =  prompt(" Cuál es la calificacion?");  //se agrega la variable con con el prompt que nos permite abrir la ventana 
+           document.write(cal);                            //dependiendo del nombre de la variable que se ingresa se cumple lo siguiente
+                                                                                        
+           
+           
+           if(cal>=9.5){
+               document.write(" = es autonomo "); } //si su calificacion es mayor o igual a 9.5 sera autonomo
+           
+           else if(cal>=8.5){
+               document.write(" = es destacado ");}  // si su calificacion es mayor o igual a 8.5 será destacado
+           
+            else if(cal>=7.5){
+               document.write(" = es satisfactorio ")} //si su calificacion es igual o mayor a 7.5 sera satisfactorio
+           
+           else{document.write(" = no acreditado ");}  // si sucalificacion es menor no acredita
+        </script>
+        
+       
+    </body>
+</html>    
