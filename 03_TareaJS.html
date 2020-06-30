@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+       <meta charset="utf-8">
+       
+       <!-- agregar icono -->
+        <style>
+           #indice{
+               color: #1AA59A;
+               font-family: monospace;
+               font-size: 20px;
+           }
+           
+           #texto1{
+               color: #227066;
+               font-family: monospace;
+           }
+           
+       </style>
+       <link rel="stylesheet" href="">
+       <a href="index.html" id="indice">INDICE</a>
+       <script>
+        function ChangeText(){                                                      //el nombre de metod permite enlazarlo con el metodo del input
+        var nombre= prompt("");                                     //se pone promt y parentesis con comilllas para dar espacio al texto que se agrega
+        document.getElementById("texto1").innerHTML=nombre;}                   /*con el id del h1 se cambiara lo hay en el inner por la variable nombre*/
+       </script>
+    </head>
+    <body>
+      <h1 id="indice"> Índice </h1>
+       <li><a href="01_TareaJS.html" id="texto">Tarea-1</a></li>
+       
+       <li><a href="02_TareaJS.html" id="texto">Tarea-2</a></li>
+       
+       <li><a href="03_TareaJS.html" id="texto">Tarea-3</a></li>
+       
+       <li><a href="04_TareaJS.html" id="texto">Tarea-4</a></li>
+       
+       <li><a href="05_TareaJS.html" id="texto">Tarea-5</a></li>
+       <h1 id="texto1">Tarea 03 con JavaScript</h1>
+        <input  type="button" value="ClicMe!" onClick="ChangeText()" id="texto1">
+        
+       
+    </body>
+</html>    
